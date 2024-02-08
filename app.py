@@ -43,4 +43,4 @@ def insert_deal_and_valuation(db, deal_id, keyword, date, volume, price, amount)
 # Example usage
 db = connect_to_mongodb()
 
-insert_deal_and_valuation(db, 1, "Bitcoin", "2023-03-21", 0.01, 28000, 280)
+insert_deal_and_valuation(db, 1, "Bitcoin", "2023-01-01", 0.01, 28000, 280)
