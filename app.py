@@ -33,6 +33,7 @@ def insert_deal_and_valuation(db, deal_id, keyword, date, volume, price, amount)
         "Price": price,
         "Amount": amount,
         "Init_Volume": volume,
+        "Init_Price": price,
         "Sold_Volume": 0,
         "Sold_Amount": 0,
     }
