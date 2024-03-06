@@ -28,6 +28,7 @@ def insert_deal_and_valuation(db, deal_id, keyword, date, volume, price, amount)
     # Insert into Valuations collection using the DealID from the Deals collection
     valuation = {
         "DealUID": deal_id,
+        "Keyword": keyword,
         "Date": datetime.strptime(date, "%Y-%m-%d"),
         "Volume": volume,
         "Price": price,
@@ -60,3 +61,14 @@ insert_deal_and_valuation(db, 7, "Bitcoin", "2023-01-01", 0.01, 28000, 280)
 insert_deal_and_valuation(db, 8, "Bitcoin", "2023-01-01", 0.01, 28500, 285)
 insert_deal_and_valuation(db, 9, "Bitcoin", "2023-01-01", 0.01, 29000, 290)
 insert_deal_and_valuation(db, 10, "Bitcoin", "2023-01-01", 0.01, 29500, 295)
+
+insert_deal_and_valuation(db, 11, "Ethereum", "2023-01-01", 0.01, 1500, 15)
+insert_deal_and_valuation(db, 12, "Ethereum", "2023-01-01", 0.01, 1550, 15.5)
+insert_deal_and_valuation(db, 13, "Ethereum", "2023-01-01", 0.01, 1600, 16)
+insert_deal_and_valuation(db, 14, "Ethereum", "2023-01-01", 0.01, 1650, 16.5)
+insert_deal_and_valuation(db, 15, "Ethereum", "2023-01-01", 0.01, 1700, 17)
+insert_deal_and_valuation(db, 16, "Ethereum", "2023-01-01", 0.01, 1750, 17.5)
+insert_deal_and_valuation(db, 17, "Ethereum", "2023-01-01", 0.01, 1800, 18)
+insert_deal_and_valuation(db, 18, "Ethereum", "2023-01-01", 0.01, 1850, 18.5)
+insert_deal_and_valuation(db, 19, "Ethereum", "2023-01-01", 0.01, 1900, 19)
+insert_deal_and_valuation(db, 20, "Ethereum", "2023-01-01", 0.01, 1950, 19.5)
